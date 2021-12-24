@@ -1,0 +1,429 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+.header{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Background.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.header h1{
+   font-size: 50px;
+   padding-left: 20px;
+}
+
+nav{
+   display: flex;
+   padding: 2% 6%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav img{
+   width: 100px;   
+}
+
+.nav-link{
+   flex: 1;
+   text-align: right;
+}
+
+.nav-link ul li{
+   list-style: none;
+   display: inline-block;
+   padding: 8px 12px;
+   position: relative;
+}
+
+.nav-link ul li a{
+   color:  #E1D9D7 ;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+.nav-link ul li::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background: red;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+}
+
+.nav-link ul li:hover::after{
+   width: 100%;
+}
+
+.text-box1{
+   width: 90%;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+
+.text-box1 h1{
+   font-size: 50px;
+   color: #fff;
+}
+
+.text-box1 p{
+   font-size: 20px;
+   color:#000;
+   line-height: 30px;
+}
+
+.text-box2{
+   padding-top: 70px;
+}
+
+.text-box2 a{   
+   text-decoration: none;
+   color: #fff;
+   background: #0f2a38;
+   padding: 15px;
+   border-radius: 25px;
+}
+
+
+.profile-pic{   
+   border-radius: 50%;
+   width: 175px;
+   height: 175px;
+}
+
+/* Home Page CSS */
+
+
+.home-cont {   
+   margin: auto;
+   padding-top: 40px;
+   text-align: center;
+   background-image: linear-gradient(rgba(35, 39, 53, 0.7),rgba(170, 187, 255, 0.7)),url(images/blog_background.jpg);
+   background-repeat:  no-repeat;
+   background-size: cover;
+}
+
+.home-title h1{
+   font-size: 50px;
+   padding-left: 20px;
+   width: 50%;
+   margin: auto;
+}
+
+
+.home-cont h2{
+   font-size: 50px;      
+}
+
+.home-title{
+   min-height: 10vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Background.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+p{
+   line-height: 20px;
+   font-size: 17px;
+   color: #000;
+}
+
+.blog-box{
+   margin-top: 5%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.blog{
+   flex-basis: 40%;
+   background-image: linear-gradient(#0f2a38,#3E7692);
+   margin: auto;
+   border-radius: 15px;
+   margin-bottom: 5%;
+   padding: 20px 45px;
+   padding-top: 40px;
+   box-sizing: border-box;
+}
+
+.blog p{
+   font-size: 20px;
+   line-height: 25px;
+}
+
+.blog a{
+   padding-top: 30px;
+}
+
+.blog h3{
+   font-size:35px;
+   padding-bottom: 20px;
+   color: rgb(150, 144, 144);
+}
+
+.blog img{
+   margin-right: -80%;
+   height: 40px;   
+}
+
+.copyright{
+   background:rgba(35, 39, 53, 0.7);
+   padding-top: 20px;
+   text-align: center;
+   line-height: 20px;
+   padding-bottom: 20px;
+}
+
+.contact h4{
+   font-size: 30px;
+}
+
+.contact p{
+   font-size: 20px;
+   line-height: 30px;
+}
+
+
+
+/* Blog 01 CSS */
+
+.blog1-title{
+   min-height: 10vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Background.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.blog1-title h1{
+   font-size: 40px;
+   padding-left: 20px;
+   width: 50%;
+   margin: auto;
+}
+
+.r1-intro{
+   margin-top: 5%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.r1-1{
+   flex-basis: 50%;  
+   margin: auto;
+   border-radius: 15px;
+   margin-bottom: 5%;
+   padding: 20px 45px;
+   padding-top: 40px;
+   box-sizing: border-box;
+}
+
+.r1-1 p{
+   font-size: 20px;
+   line-height: 25px;
+   text-align: justify;
+}
+
+.r1-1 h3{   
+   font-size:35px;
+   border-bottom: rgb(97, 93, 93) solid 3px;
+   padding-bottom: 20px;
+   color: rgb(0, 0, 0);
+}
+
+.r1-specs{
+   margin: auto;
+   padding: 0px 45px;  
+}
+
+.r1-specs h3{ 
+   font-size:35px;
+   border-bottom: rgb(97, 93, 93) solid 3px;
+   padding-bottom: 20px;
+   color: rgb(0, 0, 0);
+}
+
+.spec-table{   
+   font-size: 20px;
+   width: 60%;
+   padding-top: 0px;
+   line-height: 40px;
+}
+
+.spec-table, th{
+   border: solid black 2px;
+}
+
+.r1-gen{
+   flex-basis: 50%;  
+   margin: auto;
+   border-radius: 15px;
+   margin-bottom: 5%;
+   padding: 20px 45px;
+   padding-top: 60px;
+   box-sizing: border-box;
+}
+
+.r1-gen h3{
+   font-size:35px;
+   border-bottom: rgb(97, 93, 93) solid 3px;
+   padding-bottom: 20px;
+   color: rgb(0, 0, 0);
+}
+
+.r1-gen h4{
+   font-weight: bold;
+   text-decoration: underline;
+   text-align: center;
+   padding: 50px;
+   font-size:25px;
+   padding-bottom: 5px;
+   color: rgb(0, 0, 0);
+}
+
+.r1-gen p{
+   text-align: justify;
+   line-height: 30px;
+   font-size: 18px;
+   color: black;  
+}
+
+.left-allign{
+   padding-right: 250px;
+   padding-top: 10px;
+}
+
+.right-allign{
+   padding-left: 250px;
+   padding-top: 20px;
+}
+
+.blog-nav-btn{
+   text-align: center;
+   padding-top: 50px;   
+   background-image: linear-gradient(#aff,#FFF);
+}
+
+.blog-nav-btn a{   
+   text-decoration: none;
+   color: #fff;
+   background: #0f2a38;
+   padding: 15px;
+   border-radius: 20px;
+}
+
+/* Contact Me CSS */
+
+.contactme-title{
+   min-height: 10vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Background.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.contactme-title h1{
+   font-size: 40px;
+   padding-left: 20px;
+   width: 50%;
+   margin: auto;
+}
+
+.contact-info{
+   min-height: 80vh;   
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Contact.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.contact-details{
+   display: flex;
+   justify-content: space-between;
+}
+
+.contact-details-1{   
+   flex-basis: 30%;  
+   margin: auto;
+   border-radius: 15px;
+   margin-bottom: 5%;
+   padding: 20px 45px;
+   padding-top: 20px;
+   box-sizing: border-box;
+   background-color: rgb(74, 120, 146);
+}
+
+.contact-details-1 h3{
+   text-align: center;
+   color: #FFF;
+   font-size: 30px;
+}
+
+.contact-info h2{
+   padding-top: 50px;
+   padding-bottom: 50px;
+   text-align: center;
+   font-size: 60px;
+   color: #FFF;
+}
+
+.contact-details-1 img{
+   width: 20%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding-bottom: 20px;
+}
+
+.contact-details-1 h4{
+   text-align: center;
+   font-size: 20px;
+   color: #FFF;
+}
+
+.contact-details-1 a{
+   text-decoration: none;
+}
+
+/* blog 02 CSS */
+
+.apple-hq{
+   width: 100%;
+   padding: 30px;
+}
+
+.apple-intro{
+   margin: auto;
+   padding: 0px 45px;  
+}
+
+.apple-intro h3{   
+   font-size:35px;
+   border-bottom: rgb(97, 93, 93) solid 3px;
+   padding-bottom: 20px;
+   color: rgb(0, 0, 0);
+}
+
+.whatisapple{
+   margin: auto;
+   padding: 0px 45px;
+}
+
+.whatisapple p{
+   text-align: justify;
+   font-size: 20px;
+   line-height: 30px;
+}
